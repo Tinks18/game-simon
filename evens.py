@@ -11,6 +11,8 @@ def even_number_of_evens(numbers):
         
          return True if evens and evens % 2 == 0 else False
 
+    else:
+        raise TypeError("A list was not passed into the function")
         # return True
         # if numbers == []:
         #     return False
@@ -26,9 +28,9 @@ def even_number_of_evens(numbers):
         #     return evens % 2 == 0
         # else:
             # return False
-    else:
-        raise TypeError("A list was not passed into the function")
-    # return None
+    # else:
+    #     raise TypeError("A list was not passed into the function")
+    # # return None
 
 if __name__ == "__main__":
     even_number_of_evens([2, 1, 4])
